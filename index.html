@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
+  <div class="container">
   <body onload=retriveInformation()>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -30,129 +30,121 @@
       <p id="currentDay" class="lead"></p>
 
     </header>
+    <!---------------- Timeblocks 1 -->
     <div class="container">
       <!---------------- Timeblocks 1 -->
+   
+      <span class="row">
+        <div class="input-group" >
+          <div class="input-group-prepend" >
+            <span class="input-group-text">  09:00 AM </span>
+          </div>
+          <textarea id="timeBlockOne"class="form-control" aria-label="With textarea" hFrame="9"></textarea>
+          <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save</button>
+        </div>
+      </span>
     </div>
-    <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>9:00am</p>
+    <br>   <!---------------- Timeblocks 2 -->
+    <div class="container">
+      <span class="row">
+        <div class="input-group" >
+          <div class="input-group-prepend" >
+            <span class="input-group-text"> 10:00 AM</span>
+          </div>
+          <textarea id="timeBlockTwo"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+          <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
         </div>
-        <div class="col-4">
-          <textarea id="timeBlockOne" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
+      </span>
     </div>
-     <!----------------- Timeblocks 2 -->
-     <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>10:00am</p>
+    <br>    <!---------------- Timeblocks 3 -->
+    <div class="container">
+      <span class="row">
+        <div class="input-group" >
+          <div class="input-group-prepend" >
+            <span class="input-group-text"> 11:00 AM</span>
+          </div>
+          <textarea id="timeBlockThree"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+          <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
         </div>
-        <div class="col-4">
-          <textarea id="timeBlockTwo" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
+      </span>
     </div>
-     <!----------------- Timeblocks 3 --> <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>11:00am</p>
+    <br> <!----------------- Timeblocks 4--> 
+     <div class="container">
+      <span class="row">
+        <div class="input-group" >
+          <div class="input-group-prepend" >
+            <span class="input-group-text"> 12:00 PM</span>
+          </div>
+          <textarea id="timeBlockFour"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+          <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
         </div>
-        <div class="col-4">
-          <textarea id="timeBlockThree" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
+      </span>
     </div>
-     <!----------------- Timeblocks 4--> <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>12:00pm</p>
-        </div>
-        <div class="col-4">
-          <textarea id="timeBlockFour" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
+    <br> <!----------------- Timeblocks 5--> 
+    <div class="container">
+     <span class="row">
+       <div class="input-group" >
+         <div class="input-group-prepend" >
+           <span class="input-group-text"> 01:00 PM</span>
+         </div>
+         <textarea id="timeBlockFive"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+         <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
+       </div>
+     </span>
     </div>
-     <!----------------- Timeblocks 5--> <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>1:00pm</p>
+    <br> <!----------------- Timeblocks 6--> 
+      <div class="container">
+      <span class="row">
+        <div class="input-group" >
+          <div class="input-group-prepend" >
+            <span class="input-group-text"> 02:00 PM</span>
+          </div>
+          <textarea id="timeBlockSix"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+          <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
         </div>
-        <div class="col-4">
-          <textarea id="timeBlockFive" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
+      </span>
     </div>
-     <!----------------- Timeblocks 6 --> <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>2:00pm</p>
+    <br> <!----------------- Timeblocks 7--> 
+    <div class="container">
+      <span class="row">
+        <div class="input-group" >
+          <div class="input-group-prepend" >
+            <span class="input-group-text"> 03:00 PM</span>
+          </div>
+          <textarea id="timeBlockSeven"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+          <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
         </div>
-        <div class="col-4">
-          <textarea id="timeBlockSix" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
+      </span>
     </div>
-     <!----------------- Timeblocks 7 --> <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>3:00pm</p>
+    <br> <!----------------- Timeblocks 8--> 
+    <div class="container">
+    <span class="row">
+      <div class="input-group" >
+        <div class="input-group-prepend" >
+          <span class="input-group-text"> 04:00 PM</span>
         </div>
-        <div class="col-4">
-          <textarea id="timeBlockSeven" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
-    </div>
-     <!----------------- Timeblocks 8--> <div>
-      <div class="row">
-        <div class="offset-2"></div>
-        <div class="col-3">
-          <p>4:00pm</p>
-        </div>
-        <div class="col-4">
-          <textarea id="timeBlockEight" placeholder="Type Here"></textarea>
-        </div>
-        <div class="col 3">
-          <button id="saveButton" onclick=saveInformation()>copy </button>
-        </div>
-    </div>
-     <!----------------- Timeblocks go here -->
-     <div class="row">
-      <div class="offset-2"></div>
-      <div class="col-3">
-        <p>5:00pm</p>
+        <textarea id="timeBlockEight"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+        <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
       </div>
-      <div class="col-4">
-        <textarea id="timeBlockNine" placeholder="Type Here"></textarea>
+    </span>
+  </div>  <br> <!----------------- Timeblocks 8--> 
+  <div class="container">
+  <span class="row">
+    <div class="input-group" >
+      <div class="input-group-prepend" >
+        <span class="input-group-text"> 05:00 PM</span>
       </div>
-      <div class="col 3">
-        <button id="saveButton" onclick=saveInformation()>copy </button>
-      </div>
-  </div>
-
+      <textarea id="timeBlockNine"class="form-control" aria-label="With textarea" hFrame="10"></textarea>
+      <button id="saveButton" class="btn btn-primary btn-lg" onclick=saveInformation()>Save Task</button>
+    </div>
+  </span>
+</div>
+<br>
+<br>
  
+  
+
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

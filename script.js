@@ -1,3 +1,19 @@
+var timeFrame= new Date();
+var hour=timeFrame.getHours();
+
+function changeBackground(){
+if($("#timeBlockOne").attr("time")==hr){
+        $("#timeBlockOne").css("background-color","red")
+    }
+    if($("#timeBlockOne").attr("time")<hr){
+      $("#timeBlockOne").css("background-color","gray")
+    }
+    if($("#timeBlockOne").attr("time")>hr){
+      $("#timeBlockOne").css("background-color","green")
+    }
+    }
+
+
 function saveInformation(){
     console.log($("#timeBlockOne").val());
     localStorage.setItem("9",$("#timeBlockOne").val())  
@@ -34,6 +50,8 @@ function timeclock(){
         }, 1000);
    
 }
+
+
 
 
 
